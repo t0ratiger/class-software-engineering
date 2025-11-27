@@ -43,8 +43,8 @@ def test_buy_item_with_extra(inventory, extra_amount):
 +     st.text(min_size=1, alphabet=st.characters(codec="ascii"))
 + )
 def test_buy_invalid_item(inventory, insert_amount, invalid_item):
-    if invalid_item in inventory:
-        return
++     if invalid_item in inventory:
++         return
 
     vm = VendingMachine(inventory)
 
